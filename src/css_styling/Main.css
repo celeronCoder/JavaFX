@@ -1,0 +1,20 @@
+.root {
+    -fx-background-color: "black";
+}
+
+#label1 {
+    -fx-font-size: 5rem;
+    -fx-color: red;
+    -fx-text-align: center;
+    -fx-justify-content: center;
+    -fx-font-weight: bold;
+}
+
+#label2 {
+    -fx-font-size: 1rem;
+    -fx-color: crimson;
+    -fx-text-align: center;
+    -fx-justify-content: center;
+    -fx-margin-top: 1rem;
+    -fx-text-decoration: underline;
+}

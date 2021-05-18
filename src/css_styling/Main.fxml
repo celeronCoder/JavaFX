@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="567.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="css_styling.Main">
+   <children>
+      <Label fx:id="label1" layoutX="235.0" layoutY="245.0" text="Level 1" />
+      <Label fx:id="label2" layoutX="182.0" layoutY="284.0" text="This is some CSS styling" />
+   </children>
+</AnchorPane>
