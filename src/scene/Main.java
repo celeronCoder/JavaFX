@@ -75,7 +75,7 @@ public class Main extends Application {
 		root.getChildren().add(circle);
 
 		// adding an image to the screen
-		Image pizza = new Image("Images/pizza.png");
+		Image pizza = new Image("scene/pizza.png");
 		ImageView pizzaView = new ImageView(pizza);
 		pizzaView.setX(200);
 		pizzaView.setY(200);
