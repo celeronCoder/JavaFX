@@ -33,7 +33,7 @@ public class Scene1_Controller {
 		scene2_controller.displayName(userName);
 
 		scene = new Scene(root);
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		stage.setScene(scene);
 		stage.show();
 	}

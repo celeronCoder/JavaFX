@@ -12,18 +12,21 @@ public class Controller {
 
 	public void up(ActionEvent e) {
 //		System.out.println("UP");
-		myCircle.setCenterY(y-=10);
+		myCircle.setCenterY(y -= 10);
 	}
+
 	public void down(ActionEvent e) {
 //		System.out.println("DOWN");
-		myCircle.setCenterY(y+=10);
+		myCircle.setCenterY(y += 10);
 	}
+
 	public void right(ActionEvent e) {
 //		System.out.println("RIGHT");
-		myCircle.setCenterX(x+=10);
+		myCircle.setCenterX(x += 10);
 	}
+
 	public void left(ActionEvent e) {
 //		System.out.println("LEFT");
-		myCircle.setCenterX(x-=10);
+		myCircle.setCenterX(x -= 10);
 	}
 }

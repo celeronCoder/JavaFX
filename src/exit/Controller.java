@@ -26,7 +26,7 @@ public class Controller {
 
 		// only exit if the alert is opted OK
 		if (exit_alert.showAndWait().get() == ButtonType.OK) {
-			stage = (Stage)main.getScene().getWindow();
+			stage = (Stage) main.getScene().getWindow();
 			System.out.println("You successfully logged out of the window");
 			stage.close();
 		}
