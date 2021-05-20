@@ -44,13 +44,12 @@ JavaFX is a GUI(Graphical User Interface) Library in Java similar to core GUI Li
 - ImageView Node
 	- How to set up ImageView Node in scenebuilder
 	- Switch Images of the ImageView Node
-		```java
-	  public void toggleImage() {
-		  if (imageContainer.getImage() == image1) {
-			  imageContainer.setImage(image2);
-		  } else {
-			  imageContainer.setImage(image1);
-		  }
-	  }		
-  ```
-
+```java
+public void toggleImage() {
+  if (imageContainer.getImage() == image1) {
+	  imageContainer.setImage(image2);
+	} else {
+	imageContainer.setImage(image1);
+	}
+}
+```
