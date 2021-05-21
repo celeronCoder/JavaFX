@@ -62,4 +62,12 @@ JavaFX is a GUI(Graphical User Interface) Library in Java similar to core GUI Li
             <ToggleGroup fx:id="food" />
          </toggleGroup>
 		```
- 
+- Color Picker
+	- How to set the background of the AnchorPane(`javafx.scene.layout.AnchorPane`) with Color(`javafx.scene.paint.Color`)
+		```java
+		AnchorPane background;
+		Color color = Color.RED;
+		background.setBackground(new Background(new BackgroundFill(color, CornerRadii.EMPTY, Insets.EMPTY)));
+		// or 
+		background.setBackground(new Background(new BackgroundFill(color, null, null)));
+		```
