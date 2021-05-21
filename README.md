@@ -104,3 +104,19 @@ JavaFX is a GUI(Graphical User Interface) Library in Java similar to core GUI Li
 				choiceBox.setOnAction(this::showFood); // this:: is a method reference operator
 			}
 			```
+- Slider
+	- adding the ChangeListner to the slider using initialize method in the Controller class
+		```java
+		class Controller implements Initializable {
+			@Override
+			public void initialize(URL arg0, ResourceBundle arg1) {
+				temperatureSlider.valueProperty().addListener(new ChangeListener<Number>() { // Using Number Generic Type since temperature variable is an integer
+					@Override
+					public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+						temperature = (int) temperatureSlider.getValue();
+						temp.setText(Integer.toString(temperature)+ "C");
+					}
+				});
+			}
+		}
+		```
