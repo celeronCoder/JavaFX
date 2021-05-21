@@ -14,7 +14,7 @@ public class Controller implements Initializable {
 	@FXML
 	private Slider temperatureSlider;
 	@FXML
-	private Label temp;
+	private Label tempLabel;
 
 	private int temperature;
 
@@ -24,7 +24,7 @@ public class Controller implements Initializable {
 			@Override
 			public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
 				temperature = (int) temperatureSlider.getValue();
-				temp.setText(Integer.toString(temperature)+ "C");
+				tempLabel.setText(Integer.toString(temperature)+ "C");
 			}
 		});
 	}
