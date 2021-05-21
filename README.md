@@ -71,3 +71,36 @@ JavaFX is a GUI(Graphical User Interface) Library in Java similar to core GUI Li
 		// or 
 		background.setBackground(new Background(new BackgroundFill(color, null, null)));
 		```
+- Choice Boxes
+	- How to set the items of a choicebox and set the action event method
+		- To add anything to the nodes after the root node has been declared with the FXML File we can use the intialize method as 
+			```java
+			public class Controller implements Initializable {
+				@Override
+				public void initialize(URL arg0, ResourceBundle arg1) {
+					// do something
+				}
+			}
+			```
+		- Adding items to the choicebox
+			```java
+				private String[] food = {
+					"sushi",
+					"burger",
+					"ramen"
+				};
+				
+				@Override
+				public void initialize(URL arg0, ResourceBundle arg1) {
+					choiceBox.getItems().addAll(food); // addAll takes a collection
+				}
+			```
+		- setting the onAction event of choicebox or any node
+			```java
+			@FXML
+			private ChoiceBox<String> choiceBox;
+			@Override
+			public void initialize(URL arg0, ResourceBundle arg1) {
+				choiceBox.setOnAction(this::showFood); // this:: is a method reference operator
+			}
+			```
