@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Slider.Controller">
+   <children>
+      <Label fx:id="temp" layoutX="438.0" layoutY="264.0" text="0C" />
+      <Slider fx:id="temperatureSlider" blockIncrement="5.0" layoutX="332.0" layoutY="34.0" orientation="VERTICAL" prefHeight="432.0" prefWidth="44.0" showTickLabels="true" showTickMarks="true" />
+   </children>
+</AnchorPane>
