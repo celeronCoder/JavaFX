@@ -5,14 +5,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="560.0" prefWidth="548.0"
-            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="switch_scenes.Controller">
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Switch_Scenes.Controller">
     <children>
-        <Text layoutX="173.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scene 1">
+        <Text layoutX="173.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scene 2">
             <font>
                 <Font name="FreeMono Bold" size="48.0"/>
             </font>
         </Text>
-        <Button fx:id="switch1" layoutX="207.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchToScene2"
-                text="Switch to scene 2"/>
+        <Button fx:id="switch2" layoutX="208.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchToScene1"
+                text="Switch to Scene 1"/>
     </children>
 </AnchorPane>

@@ -1,4 +1,4 @@
-package scene;
+package Scene;
 
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -75,7 +75,7 @@ public class Main extends Application {
 		root.getChildren().add(circle);
 
 		// adding an image to the screen
-		Image pizza = new Image("scene/pizza.png");
+		Image pizza = new Image("Scene/pizza.png");
 		ImageView pizzaView = new ImageView(pizza);
 		pizzaView.setX(200);
 		pizzaView.setY(200);

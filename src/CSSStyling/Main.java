@@ -1,4 +1,4 @@
-package scenebuilder;
+package CSSStyling;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,8 +7,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+
 	public static void main(String[] args) {
-		Application.launch(args);
+		launch(args);
 	}
 
 	@Override
@@ -16,6 +17,13 @@ public class Main extends Application {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 			Scene scene = new Scene(root);
+
+			// scene.getStylesheets().add(getClass().getResource("Main.css").toExternalForm());
+
+			// to reuse stylesheet in more than one scene
+			String css = this.getClass().getResource("Main.css").toExternalForm();
+			scene.getStylesheets().add(css);
+			stage.setTitle("Css Styling");
 			stage.setScene(scene);
 			stage.show();
 		} catch (Exception e) {

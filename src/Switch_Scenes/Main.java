@@ -1,4 +1,4 @@
-package controller;
+package Switch_Scenes;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -18,9 +18,9 @@ public class Main extends Application {
 	public void start(Stage stage) throws Exception {
 		try {
 			Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Scene1.fxml")));
-			Scene scene = new Scene(root);
-			stage.setTitle("Communication b/w Controllers");
-			stage.setScene(scene);
+			Scene scene1 = new Scene(root);
+			stage.setTitle("Change From one Scene To other.");
+			stage.setScene(scene1);
 			stage.show();
 		} catch (Exception e) {
 			e.printStackTrace();

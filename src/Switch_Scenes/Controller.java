@@ -1,4 +1,4 @@
-package switch_scenes;
+package Switch_Scenes;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

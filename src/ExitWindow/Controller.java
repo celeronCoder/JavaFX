@@ -1,4 +1,4 @@
-package exit;
+package ExitWindow;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

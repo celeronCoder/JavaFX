@@ -1,5 +1,7 @@
 package Slider;
 
+// TODO: change the path to the lib folder of the javafx library moved to ~/java/
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

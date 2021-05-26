@@ -1,4 +1,4 @@
-package css_styling;
+package CSSStyling;
 
 public class Controller {
 }

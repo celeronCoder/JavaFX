@@ -1,4 +1,4 @@
-package scenebuilder;
+package SceneBuilder;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

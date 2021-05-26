@@ -5,7 +5,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.Circle?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="565.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/16"
-            fx:controller="scenebuilder.Controller">
+            fx:controller="SceneBuilder.Controller">
     <children>
         <Button layoutX="234.0" layoutY="14.0" mnemonicParsing="false" onAction="#up" text="Up"/>
         <Button layoutX="14.0" layoutY="271.0" mnemonicParsing="false" onAction="#left" text="Left"/>

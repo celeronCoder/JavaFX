@@ -13,14 +13,14 @@ JavaFX is a GUI(Graphical User Interface) Library in Java similar to core GUI Li
 		stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		```
 - Using CSS Styling with Scenes
-	- adding css stylesheet to the scene
+	- adding css stylesheet to the Scene
 		```java
-		scene.getStylesheets().add(getClass().getResource("Main.css").toExternalForm());
+		Scene.getStylesheets().add(getClass().getResource("Main.css").toExternalForm());
 		```
 	- reusing stylesheet to use in different scenes
 		```java
 		String css = this.getClass().getResource("Main.css").toExternalForm();
-		scene.getStylesheets().add(css);
+		Scene.getStylesheets().add(css);
 		```
 - Communicating b/w different controllers
 	- Using FXML elements within controllers
@@ -29,7 +29,7 @@ JavaFX is a GUI(Graphical User Interface) Library in Java similar to core GUI Li
 		TextField username;
 
 		private Stage stage;
-		private Scene scene;
+		private Scene Scene;
 		private Parent root;
 		```
 	- Reusing FXMLLoader Instance
@@ -42,7 +42,7 @@ JavaFX is a GUI(Graphical User Interface) Library in Java similar to core GUI Li
 		Scene2_Controller scene2_controller = loader.getController();
 		```
 - ImageView Node
-	- How to set up ImageView Node in scenebuilder
+	- How to set up ImageView Node in SceneBuilder
 	- Switch Images of the ImageView Node
 	```java
 	public void toggleImage() {
@@ -63,7 +63,7 @@ JavaFX is a GUI(Graphical User Interface) Library in Java similar to core GUI Li
          </toggleGroup>
 		```
 - Color Picker
-	- How to set the background of the AnchorPane(`javafx.scene.layout.AnchorPane`) with Color(`javafx.scene.paint.Color`)
+	- How to set the background of the AnchorPane(`javafx.Scene.layout.AnchorPane`) with Color(`javafx.Scene.paint.Color`)
 		```java
 		AnchorPane background;
 		Color color = Color.RED;
